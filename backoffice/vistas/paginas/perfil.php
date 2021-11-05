@@ -18,22 +18,23 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
-
-    <?php
-
-    include "modulos/inicio/recuadros-superiores.php";
-    include "modulos/inicio/vistas-previas.php";
-
-    ?>
-      
-      
-      </div>
-
-     
 
 
-       
+    <div class="container-fluid">
+
+      <div class="row">
+        <?php
+        include "modulos/perfil/info-usuario.php";
+
+        include "modulos/perfil/formulario-suscripcion.php";
+
+        include "modulos/perfil/material-promocion.php";
+        ?>
+      </div>     
+    </div>
+
+
+
     </section>
     <!-- /.content -->
   </div>

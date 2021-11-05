@@ -27,6 +27,15 @@
       <!-- overlayScrollbars -->
   	  <link rel="stylesheet" href="vistas/css/plugins/OverlayScrollbars.min.css">
 
+      <!-- jdSlider -->
+	    <link rel="stylesheet" href="vistas/css/plugins/jdSlider.css">
+
+      <!-- Select2 -->
+	    <link rel="stylesheet" href="vistas/css/plugins/select2.min.css">
+
+      <!-- estilo personalizado css -->
+  	  <link rel="stylesheet" href="vistas/css/style.css">
+
 
     
   <!--=====================================
@@ -48,6 +57,15 @@
   <!-- overlayScrollbars -->
 	<script src="vistas/js/plugins/jquery.overlayScrollbars.min.js"></script>
 
+  <!-- jdSlider -->
+	<!-- https://www.jqueryscript.net/slider/Carousel-Slideshow-jdSlider.html -->
+	<script src="vistas/js/plugins/jdSlider.js"></script>
+
+  <!-- Select2 -->	
+	<!-- https://github.com/select2/select2 -->
+	<script src="vistas/js/plugins/select2.full.min.js"></script>
+
+ 
 
 
 </head>
@@ -64,13 +82,44 @@ include "paginas/modulos/menu.php";
 paginas del sitio
 ======================================--*/
 
+if(isset($_GET["pagina"])){
 
-include "paginas/inicio.php";
+  if( $_GET["pagina"] == "inicio" ||
+      $_GET["pagina"] == "perfil" ||
+      $_GET["pagina"] == "usuarios" ||
+      $_GET["pagina"] == "red" ||
+      $_GET["pagina"] == "ingresos" ||
+      $_GET["pagina"] == "plan-compensacion" ||
+      $_GET["pagina"] == "soporte" ||
+      $_GET["pagina"] == "salir"){
+
+      include "paginas/".$_GET["pagina"].".php";
+  }
+
+  else if( $_GET["pagina"] == "categoria-1" ||
+           $_GET["pagina"] == "categoria-2" ||
+           $_GET["pagina"] == "categoria-3"){
+
+            include "paginas/videos.php";
+  }
+
+  else{
+
+  include "paginas/error404.php";
+}
+
+}else{
+  include "paginas/inicio.php";
+}
+
 include "paginas/modulos/footer.php";
+
 
   ?>
 </div>
 
+<script src="vistas/js/inicio.js"></script>
+<script src="vistas/js/usuarios.js"></script>
 
 </body>
 

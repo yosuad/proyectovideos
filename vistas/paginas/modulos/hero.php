@@ -23,7 +23,7 @@ DISEÑO HERO - CINEMAGRAPH
 
 				<div class="bg-white text-center py-5 px-4">
 					
-					<h4>Cuerpo Activo</h4>
+					<h4>Modelos en Vivo</h4>
 
 					<p>Lorem ipsum dolor sit amet consectetur elit</p>
 
@@ -37,7 +37,7 @@ DISEÑO HERO - CINEMAGRAPH
 
 				<div class="bg-white text-center py-5 px-4">
 					
-					<h4>Mente Sana</h4>
+					<h4> videos </h4>
 
 					<p>Lorem ipsum dolor sit amet consectetur elit</p>
 
@@ -51,7 +51,7 @@ DISEÑO HERO - CINEMAGRAPH
 
 				<div class="bg-white text-center py-5 px-4">
 					
-					<h4>Espíritu Libre</h4>
+					<h4> Usuarios </h4>
 
 					<p>Lorem ipsum dolor sit amet consectetur elit</p>
 
